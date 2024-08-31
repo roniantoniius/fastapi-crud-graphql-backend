@@ -3,6 +3,8 @@
 Seafood CRUD FastAPI with GraphQL is a streamlined API project designed for managing marine products, built using FastAPI and GraphQL. It leverages Strawberry GraphQL for creating a robust and flexible GraphQL schema, providing a streamlined interface for data queries and mutations. The application utilizes SQLAlchemy ORM for seamless database interactions, interfacing with a SQLite backend to handle data persistence. The combination of FastAPI and GraphQL ensures high performance and efficient data management, making it an ideal solution for handling seafood inventory and related operations to support further website.
 
 ## Data Understanding
+![database_ERD_marineShop](https://github.com/user-attachments/assets/eeb3f235-1b55-476f-9571-18dd889f8ed0)
+
 1. Vessels
 Function and Purpose: This table stores the overall information used for marine product sales or transactions. Each vessel has a unique ID namely vessel_id (PK), name, and active status. Analogously, this table is a transaction record that has information on transaction id (vessel_id), seller (distributor), buyer (buyer), and a list of products purchased (catches). This vessel is connected to the distributor (seller), buyer, and catches.
 
@@ -34,5 +36,4 @@ and also
 http://127.0.0.1:8000/docs
 ```
 
-
-### 
+![fastapi_ui](https://github.com/user-attachments/assets/595da366-8424-4c81-906d-b08cafbd3b93)
